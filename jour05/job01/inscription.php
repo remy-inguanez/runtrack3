@@ -6,7 +6,6 @@
 	<meta charset="utf-8">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script  type="text/javascript" src="script.js" async="true"></script>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
 	<title>Inscription</title>
 </head>
 
