@@ -1,0 +1,66 @@
+	
+	body
+	{
+		margin: 0;
+		background-color: rgb(63, 63, 63);
+	}
+	.menu
+	{
+		 background: #429de2;
+	}
+		.menu .burger
+	{
+		display: none;
+	}
+
+	.menu nav
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+	a
+	{
+		text-decoration: none;
+		font-size:30px;
+		color: white;
+	}
+
+@media screen and (max-width: 767px) 
+{
+	.menu nav
+	{
+  		height:0;
+  		overflow:hidden;
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: space-around;
+  		transition:height .2s;
+	}
+	.menu .burger
+	{	display: block;
+  		appearance:none;
+  		-moz-appearance:none;
+  		-webkit-appearance:none;
+  		cursor:pointer;
+  		font-size:30px;
+	}
+
+	.menu .burger:before
+	{
+		  content:'Menu';
+		  color: white;
+	}
+
+	.menu .burger:checked:before
+	{
+	  content:'Menu(recliquer pour fermer)';
+	}
+
+	.menu .burger:checked + nav
+	{
+  		height:calc(50vh - 50px);
+	}
+
+}
